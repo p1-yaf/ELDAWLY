@@ -3,55 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ELDAWLY STORE - تحميل</title>
+    <title>ELDAWLY | التحميل</title>
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/loading.css">
-    <link rel="icon" href="assets/images/favicon.ico">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            background-color: #0A192F;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            overflow: hidden;
-        }
-    </style>
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
 </head>
 <body>
-    <!-- الشعار -->
-    <div class="logo-container">
-        <img src="assets/images/logo.png" alt="ELDAWLY Logo" class="main-logo">
-        <h1 class="store-name">ELDAWLY STORE</h1>
-    </div>
+    <!-- جسيمات الخلفية المتحركة -->
+    <div id="particles-js"></div>
     
-    <!-- شعار PUBG -->
-    <div class="pubg-logo">
-        <img src="assets/images/pubg-logo.png" alt="PUBG Logo">
-    </div>
+    <!-- عناصر خلفية إضافية -->
+    <div class="gradient-orb orb-1"></div>
+    <div class="gradient-orb orb-2"></div>
+    <div class="gradient-orb orb-3"></div>
     
-    <!-- شريط التحميل -->
-    <div class="loading-container">
-        <div class="loading-bar">
-            <div class="loading-progress"></div>
+    <!-- حاوية المحتوى الرئيسي -->
+    <div class="loading-wrapper">
+        <!-- الشعار مع تأثيرات -->
+        <div class="logo-container">
+            <div class="logo-glow"></div>
+            <img src="assets/images/logo.png" alt="ELDAWLY" class="main-logo" id="mainLogo">
+            <h1 class="store-name">
+                <span class="el">EL</span><span class="dawly">DAWLY</span>
+            </h1>
+            <p class="store-tagline">PUBG STORE</p>
         </div>
-        <div class="loading-text">جاري التحميل...</div>
-        <div class="loading-percentage">0%</div>
-    </div>
-    
-    <!-- تأثيرات الخلفية -->
-    <div class="background-effects">
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
+        
+        <!-- شريط التحميل المتطور -->
+        <div class="loader-container">
+            <div class="loader-progress-container">
+                <div class="loader-progress-bar" id="progressBar"></div>
+            </div>
+            
+            <div class="loader-info">
+                <span class="loader-status" id="loadingStatus">جاري تهيئة المتجر...</span>
+                <span class="loader-percentage" id="loadingPercentage">0%</span>
+            </div>
+            
+            <!-- نقاط التحميل المتحركة -->
+            <div class="loader-dots">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        
+        <!-- عناصر PUBG متحركة -->
+        <div class="pubg-elements">
+            <div class="pubg-helmet"></div>
+            <div class="pubg-pan"></div>
+            <div class="pubg-weapon"></div>
+        </div>
+        
+        <!-- شعار PUBG -->
+        <div class="pubg-brand">
+            <img src="assets/images/pubg-logo.png" alt="PUBG" class="pubg-logo">
+            <span>BATTLEGROUNDS</span>
+        </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="assets/js/loading.js"></script>
 </body>
 </html>
