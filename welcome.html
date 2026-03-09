@@ -3,117 +3,240 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ELDAWLY STORE - مرحباً</title>
+    <title>ELDAWLY | مرحباً</title>
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/welcome.css">
-    <link rel="icon" href="assets/images/favicon.ico">
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
 </head>
 <body>
-    <!-- خلفية متحركة -->
-    <div class="background-animation"></div>
+    <!-- جسيمات الخلفية -->
+    <div id="particles-js"></div>
     
-    <!-- الشعار الرئيسي -->
-    <header class="main-header">
-        <div class="logo-section">
-            <img src="assets/images/logo.png" alt="ELDAWLY Logo" class="welcome-logo">
-            <h1 class="welcome-title">ELDAWLY <span class="highlight">STORE</span></h1>
-            <p class="tagline">متجرك الموثوق لـ PUBG Mobile</p>
+    <!-- عناصر خلفية -->
+    <div class="welcome-bg">
+        <div class="bg-grid"></div>
+        <div class="bg-glow"></div>
+    </div>
+    
+    <!-- شريط علوي -->
+    <nav class="welcome-nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="assets/images/logo.png" alt="ELDAWLY" class="nav-logo-img">
+                <span>ELDAWLY</span>
+            </div>
+            <div class="nav-links">
+                <a href="#" class="nav-link">الرئيسية</a>
+                <a href="#" class="nav-link">خدماتنا</a>
+                <a href="#" class="nav-link">اتصل بنا</a>
+                <a href="#" class="nav-link special">المتجر</a>
+            </div>
         </div>
-    </header>
+    </nav>
     
-    <!-- محتوى الترحيب -->
-    <main class="welcome-container">
-        <div class="welcome-card">
-            <h2 class="welcome-message">🎮 مرحباً بك في عالم PUBG!</h2>
-            <p class="description">
-                اشتري وبيع حسابات، شحن شدات، وزيادة الشعبية<br>
-                بأفضل الأسعار وأعلى جودة في السوق
-            </p>
+    <!-- المحتوى الرئيسي -->
+    <main class="welcome-main">
+        <!-- قسم الترحيب -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <div class="hero-badge">🔥 PUBG STORE</div>
+                <h1 class="hero-title">
+                    <span class="hero-title-line">ELDAWLY</span>
+                    <span class="hero-title-gradient">لتجارة حسابات PUBG</span>
+                </h1>
+                <p class="hero-description">
+                    متجرك الموثوق لشراء وبيع حسابات PUBG، شحن الشدات، وزيادة الشعبية<br>
+                    بأفضل الأسعار وأسرع خدمة في الوطن العربي
+                </p>
+                
+                <!-- أزرار الإجراء -->
+                <div class="hero-buttons">
+                    <a href="login.html" class="btn btn-primary">
+                        <span class="btn-icon">🔐</span>
+                        تسجيل الدخول
+                    </a>
+                    <a href="register.html" class="btn btn-secondary">
+                        <span class="btn-icon">🚀</span>
+                        إنشاء حساب جديد
+                    </a>
+                </div>
+                
+                <!-- إحصائيات سريعة -->
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">5000+</span>
+                        <span class="stat-label">عملاء</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">10000+</span>
+                        <span class="stat-label">عملية ناجحة</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">دعم فني</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- صورة توضيحية -->
+            <div class="hero-image">
+                <div class="hero-image-glow"></div>
+                <img src="assets/images/pubg-character.png" alt="PUBG Character" class="floating-image">
+            </div>
+        </section>
+        
+        <!-- قسم الخدمات -->
+        <section class="services-section">
+            <div class="section-header">
+                <h2 class="section-title">✨ خدماتنا المميزة</h2>
+                <p class="section-subtitle">اختر الخدمة التي تناسبك واستمتع بتجربة فريدة</p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- بطاقة حسابات -->
+                <div class="service-card" data-service="accounts">
+                    <div class="service-icon-wrapper">
+                        <div class="service-icon-glow"></div>
+                        <img src="assets/icons/account-icon.svg" alt="حسابات" class="service-icon">
+                    </div>
+                    <h3 class="service-title">حسابات PUBG</h3>
+                    <p class="service-description">شراء وبيع حسابات بمستويات مختلفة وأسعار تنافسية</p>
+                    <div class="service-features">
+                        <span class="feature-tag">⭐ حسابات مميزة</span>
+                        <span class="feature-tag">🎯 مستويات عالية</span>
+                        <span class="feature-tag">🛡️ ضمان شامل</span>
+                    </div>
+                    <a href="#" class="service-link">استعرض الحسابات →</a>
+                </div>
+                
+                <!-- بطاقة شدات -->
+                <div class="service-card" data-service="uc">
+                    <div class="service-icon-wrapper">
+                        <div class="service-icon-glow"></div>
+                        <img src="assets/icons/uc-icon.svg" alt="UC" class="service-icon">
+                    </div>
+                    <h3 class="service-title">شحن UC</h3>
+                    <p class="service-description">شحن شدات PUBG بأسعار حصرية وتوصيل فوري</p>
+                    <div class="service-features">
+                        <span class="feature-tag">⚡ شحن فوري</span>
+                        <span class="feature-tag">💰 أرخص الأسعار</span>
+                        <span class="feature-tag">🔔 دعم 24/7</span>
+                    </div>
+                    <a href="#" class="service-link">شحن الآن →</a>
+                </div>
+                
+                <!-- بطاقة شعبية -->
+                <div class="service-card" data-service="popularity">
+                    <div class="service-icon-wrapper">
+                        <div class="service-icon-glow"></div>
+                        <img src="assets/icons/popularity-icon.svg" alt="شعبية" class="service-icon">
+                    </div>
+                    <h3 class="service-title">زيادة الشعبية</h3>
+                    <p class="service-description">شراء وبيع شعبية PUBG لزيادة متابعيك</p>
+                    <div class="service-features">
+                        <span class="feature-tag">📈 زيادة سريعة</span>
+                        <span class="feature-tag">👥 متابعين حقيقيين</span>
+                        <span class="feature-tag">💯 آمن ومضمون</span>
+                    </div>
+                    <a href="#" class="service-link">اطلب شعبية →</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- قسم المزايا -->
+        <section class="features-section">
+            <h2 class="section-title centered">لماذا تختار ELDAWLY؟</h2>
             
             <div class="features-grid">
-                <div class="feature">
-                    <div class="feature-icon">👤</div>
-                    <h3>حسابات PUBG</h3>
-                    <p>شراء وبيع حسابات بمستويات مختلفة</p>
+                <div class="feature-item">
+                    <div class="feature-icon-circle">
+                        <span>⚡</span>
+                    </div>
+                    <h4>سرعة فائقة</h4>
+                    <p>توصيل الطلبات في أقل من 10 دقائق</p>
                 </div>
                 
-                <div class="feature">
-                    <div class="feature-icon">💎</div>
-                    <h3>شحن الشدات</h3>
-                    <p>شحن UC فوري وآمن</p>
+                <div class="feature-item">
+                    <div class="feature-icon-circle">
+                        <span>🛡️</span>
+                    </div>
+                    <h4>أمان تام</h4>
+                    <p>جميع المعاملات مشفرة ومؤمنة</p>
                 </div>
                 
-                <div class="feature">
-                    <div class="feature-icon">📈</div>
-                    <h3>زيادة الشعبية</h3>
-                    <p>شراء وبيع الشعبية بسرعة</p>
+                <div class="feature-item">
+                    <div class="feature-icon-circle">
+                        <span>💰</span>
+                    </div>
+                    <h4>أسعار تنافسية</h4>
+                    <p>أفضل الأسعار في السوق العربي</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon-circle">
+                        <span>🎮</span>
+                    </div>
+                    <h4>خبرة طويلة</h4>
+                    <p>أكثر من 3 سنوات في مجال PUBG</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon-circle">
+                        <span>📞</span>
+                    </div>
+                    <h4>دعم فني</h4>
+                    <p>فريق دعم متاح 24 ساعة</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon-circle">
+                        <span>🎁</span>
+                    </div>
+                    <h4>عروض حصرية</h4>
+                    <p>خصومات وعروض مستمرة للعملاء</p>
                 </div>
             </div>
-            
-            <!-- أزرار الاختيار -->
-            <div class="action-buttons">
-                <a href="login.html" class="btn btn-login">
-                    <span class="btn-icon">🔐</span>
-                    تسجيل الدخول
-                </a>
-                
-                <a href="register.html" class="btn btn-register">
-                    <span class="btn-icon">🚀</span>
-                    أنشئ حساب جديد
+        </section>
+        
+        <!-- قسم التطبيق -->
+        <section class="cta-section">
+            <div class="cta-content">
+                <h2>استعد لتجربة PUBG لا مثيل لها!</h2>
+                <p>انضم إلى آلاف العملاء واستمتع بأفضل الخدمات</p>
+                <a href="register.html" class="btn btn-cta">
+                    ابدأ الآن مجاناً
+                    <span class="btn-arrow">→</span>
                 </a>
             </div>
-            
-            <p class="guest-text">
-                أو <a href="main-dashboard.html" class="guest-link">استعرض المتجر كضيف</a>
-            </p>
-        </div>
+        </section>
     </main>
     
-    <!-- قسم خدماتنا -->
-    <section class="services-section">
-        <h2 class="section-title">✨ خدماتنا المميزة</h2>
-        <div class="services-grid">
-            <div class="service">
-                <div class="service-icon">⚡</div>
-                <h3>شحن فوري</h3>
-                <p>توصيل خلال دقائق</p>
-            </div>
-            
-            <div class="service">
-                <div class="service-icon">🛡️</div>
-                <h3>ضمان آمن</h3>
-                <p>معاملات مؤمنة 100%</p>
-            </div>
-            
-            <div class="service">
-                <div class="service-icon">👑</div>
-                <h3>جودة عالية</h3>
-                <p>أفضل المنتجات فقط</p>
-            </div>
-            
-            <div class="service">
-                <div class="service-icon">💬</div>
-                <h3>دعم فني</h3>
-                <p>24/7 على واتساب</p>
-            </div>
-        </div>
-    </section>
-    
-    <!-- فوتر -->
+    <!-- الفوتر -->
     <footer class="welcome-footer">
         <div class="footer-content">
-            <div class="footer-logo">
-                <img src="assets/images/pubg-logo.png" alt="PUBG" width="40">
-                <span>ELDAWLY PUBG STORE</span>
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <img src="assets/images/logo.png" alt="ELDAWLY">
+                    <span>ELDAWLY STORE</span>
+                </div>
+                <p class="footer-description">أفضل متجر لخدمات PUBG في الوطن العربي، نوفر لك كل ما تحتاجه في مكان واحد.</p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">📱</a>
+                    <a href="#" class="social-icon">💬</a>
+                    <a href="#" class="social-icon">📧</a>
+                    <a href="#" class="social-icon">📞</a>
+                </div>
             </div>
-            <p class="copyright">© 2024 جميع الحقوق محفوظة</p>
-            <div class="social-links">
-                <a href="#" class="social-link">📱 واتساب</a>
-                <a href="#" class="social-link">📧 إيميل</a>
-                <a href="#" class="social-link">📞 اتصال</a>
+            
+            <div class="footer-section">
+                <h4>روابط سريعة</h4>
+                <ul class="footer-links">
+                    <li><a href="#">الرئيسية</a></li>
+                    <li><a href="#">حسابات للبيع</a></li>
+                    <li><a href="#">شحن UC</a></li>
+                    <li><a href="#">زيادة شعبية</a></li>
+                    <li><a href="#">المدونة</a></li>
+                </ul>
             </div>
-        </div>
-    </footer>
-
-    <script src="assets/js/welcome.js"></script>
-</body>
-</html>
+            
+            <div
