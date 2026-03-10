@@ -1,0 +1,28 @@
+{
+  "background_color": "hsv(0, 0%, 100%)",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "ELDAWLY",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "ELDAWLY",
+  "start_url": "https://p1-yaf.github.io/ELDAWLY",
+  "theme_color": "rgb(255, 255, 255)",
+  "icons": [
+    {
+      "src": "https://p1-yaf.github.io/assets/images/logo.png",
+      "type": "image/png",
+      "isSquare": false,
+      "isPng": true,
+      "isWebp": false,
+      "isJpg": false,
+      "width": 0,
+      "is512x512": false,
+      "is256x256": false,
+      "is192x192": false
+    }
+  ],
+  "id": "ELDAWLY",
+  "description": "https://p1-yaf.github.io/ELDAWLY",
+  "lang": "ar"
+}
